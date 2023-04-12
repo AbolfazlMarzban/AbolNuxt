@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Noto sans';
+    src: url('./fonts/NotoSansMono-VariableFont_wdth,wght.ttf') format('truetype');
+}
+.v-application{
+    font-family: 'Noto sans' !important;
+
+}
+.navmenu{
+    list-style: none;
+    li{
+        display: inline-block;
+        padding: 10px;
+    }
+    li:hover{
+        
+        a{
+            color: purple;
+            cursor: pointer;
+        }
+    }
+}
+.title{
+    font-size: 50px
+}
+.seeHow{
+    transition: 1s;
+    border: 1px solid pink;
+}
+.seeHow:hover{
+    color: #e91e63;
+    background: white !important;
+    transition: 1s;
+}
+.connectButton{
+    transition: 1s;
+    .v-btn__content{
+        color: purple !important;
+    }
+}
+.connectButton:hover{
+    transition: 1s;
+}
+.servicebox{
+    background: #EEEEEE;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: 1s;
+}
+.servicebox:hover{
+    transform:translate(0px,-10px) ;
+    transition: 1s;
+    cursor: pointer;
+}
+.tabHeads{
+    border: 1px solid purple !important;
+    border-radius: 20px !important;
+}
+.v-tabs-slider-wrapper{
+    display: none;
+}
+
+.v-tab:before{
+    display: none;
+}
+.tabBtn{
+    color: #6155a6 !important;
+    border: 1px solid #6155a6 !important;
+    background: white !important;
+    transition: 1s;
+}
+.tabBtn:hover{
+    background: #6155a6 !important;
+    color: white !important;
+    transition: 1s;
+}
+.tabBtn--active{
+    background: #6155a6 !important;
+    color: white !important;
+    transition: 1s;
+}
+.v-tab--active{
+    button{
+        background: #6155a6 !important;
+        color: white !important;
+        transition: 1s;
+    }
+
+}
+.portfolios{
+    border-radius: 30px !important;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.portlink{
+    text-decoration: none;
+    color: #6155a6 !important;
+}
+.social{
+    text-decoration: none;
+}
+.contacts{
+    padding: 0px !important;
+    li{
+        list-style: none;
+        padding: 15px 0px;
+    }
+}
+.quicklinks{
+    padding-top: 10px;
+    li{
+        list-style: none;
+        padding: 5px 0px;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+.profilepic{
+    border-radius: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
