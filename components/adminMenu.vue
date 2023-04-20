@@ -3,8 +3,8 @@
         <v-card>
             <v-list>
                 <v-list-item-group>
-                    <v-list-item>
-
+                    <v-list-item v-for="(item, i) in menu" :key="i">
+                        <a :href="`/admin/${item}`">{{ item }}</a>
                     </v-list-item>
                 </v-list-item-group>
             </v-list>
