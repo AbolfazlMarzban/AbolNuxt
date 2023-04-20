@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Welcome to the admin Panel</h1>
+    <LazyAdminHome />
   </div>
 </template>
 
@@ -10,6 +10,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

@@ -2,15 +2,9 @@
   <div>
     <v-container>
       <v-row class="justify-center text-center">
-        <v-col
-          cols="12"
-          lg="8"
-          md="8"
-          xl="6"
-          class="d-flex justify-center flex-column"
-        >
+        <v-col cols="12" lg="8" md="8" xl="6" class="d-flex justify-center flex-column">
           <h2 style="font-size: 40px" class="mt-15">
-           I help people to shine Online
+            I help people to shine Online
           </h2>
           <br />
           <p style="font-size: 30px">
@@ -22,9 +16,7 @@
       <v-row class="justify-center">
         <v-col cols="2">
           <NuxtLink to="/services" style="text-decoration: none">
-            <v-btn color="pink" depressed rounded dark large class="seeHow"
-              >See How</v-btn
-            >
+            <v-btn color="pink" depressed rounded dark large class="seeHow">See How</v-btn>
           </NuxtLink>
         </v-col>
         <v-col cols="2">
@@ -43,17 +35,11 @@
       </v-row>
       <v-row>
         <v-col cols="12">
-          <h2
-            class="text-xl-h4"
-            style="font-family: 'Noto sans' !important; font-weight: bold"
-          >
+          <h2 class="text-xl-h4" style="font-family: 'Noto sans' !important; font-weight: bold">
             Services that will help
           </h2>
           <br />
-          <h2
-            style="color: #6155a6; font-family: 'Noto sans' !important"
-            class="text-xl-h4"
-          >
+          <h2 style="color: #6155a6; font-family: 'Noto sans' !important" class="text-xl-h4">
             Your Business
           </h2>
         </v-col>
@@ -86,17 +72,11 @@
       </v-row>
       <v-row class="mt-15">
         <v-col cols="12">
-          <h2
-            class="text-xl-h4"
-            style="font-family: 'Noto sans' !important; font-weight: bold"
-          >
+          <h2 class="text-xl-h4" style="font-family: 'Noto sans' !important; font-weight: bold">
             Let's see what I've been
           </h2>
           <br />
-          <h2
-            style="color: #6155a6; font-family: 'Noto sans' !important"
-            class="text-xl-h4"
-          >
+          <h2 style="color: #6155a6; font-family: 'Noto sans' !important" class="text-xl-h4">
             working on
           </h2>
           <p class="mt-5">
@@ -111,7 +91,7 @@
         <v-col cols="12">
           <v-tabs v-model="tab">
             <v-tab class="tabHead">
-              <v-btn rounded depressed large class="tabBtn">PWA</v-btn>
+              <v-btn rounded depressed large class="tabBtn">Web Applications</v-btn>
             </v-tab>
             <v-tab class="tabHead">
               <v-btn rounded depressed large class="tabBtn">Front End</v-btn>
@@ -129,44 +109,23 @@
           <v-tabs-items v-model="tab" class="mt-5">
             <v-tab-item>
               <v-row class="justify-center">
-                <v-col
-                  cols="12"
-                  lg="6"
-                  md="6"
-                  xl="4"
-                  v-for="pwa in this.pwas"
-                  :key="pwa.id"
-                >
+                <v-col cols="12" lg="6" md="6" xl="4" v-for="pwa in this.pwas" :key="pwa.id">
                   <v-card class="el ma-5 portfolios">
                     <v-img height="300" :src="pwa.image">
                       <template #placeholder>
-                        <v-row
-                          class="fill-height"
-                          justify="center"
-                          align="center"
-                        >
-                          <v-progress-circular
-                            width="2"
-                            size="100"
-                            color="purple"
-                            indeterminate
-                          ></v-progress-circular>
+                        <v-row class="fill-height" justify="center" align="center">
+                          <v-progress-circular width="2" size="100" color="purple" indeterminate></v-progress-circular>
                         </v-row>
                       </template>
                     </v-img>
-                    <v-card-title
-                      class="pb-1 text-h6"
-                      style="
-                        font-family: 'Noto Sans' !important;
-                        font-weight: bold;
-                      "
-                    >
+                    <v-card-title class="pb-1 text-h6" style="
+                          font-family: 'Noto Sans' !important;
+                          font-weight: bold;
+                        ">
                       {{ pwa.name }}
                     </v-card-title>
                     <v-card-actions class="pl-5 pb-3">
-                      <a :href="pwa.link" target="_blank" class="portlink"
-                        >Check it Out!</a
-                      >
+                      <a :href="pwa.link" target="_blank" class="portlink">Check it Out!</a>
                     </v-card-actions>
                   </v-card>
                 </v-col>
@@ -174,44 +133,23 @@
             </v-tab-item>
             <v-tab-item>
               <v-row>
-                <v-col
-                  cols="12"
-                  lg="6"
-                  md="6"
-                  xl="6"
-                  v-for="front in frontend"
-                  :key="front.id"
-                >
+                <v-col cols="12" lg="6" md="6" xl="6" v-for="front in frontend" :key="front.id">
                   <v-card class="el ma-5 portfolios">
                     <v-img height="300" :src="front.image">
                       <template #placeholder>
-                        <v-row
-                          class="fill-height"
-                          justify="center"
-                          align="center"
-                        >
-                          <v-progress-circular
-                            width="2"
-                            size="100"
-                            color="purple"
-                            indeterminate
-                          ></v-progress-circular>
+                        <v-row class="fill-height" justify="center" align="center">
+                          <v-progress-circular width="2" size="100" color="purple" indeterminate></v-progress-circular>
                         </v-row>
                       </template>
                     </v-img>
-                    <v-card-title
-                      class="pb-1 text-h6"
-                      style="
-                        font-family: 'Noto Sans' !important;
-                        font-weight: bold;
-                      "
-                    >
+                    <v-card-title class="pb-1 text-h6" style="
+                          font-family: 'Noto Sans' !important;
+                          font-weight: bold;
+                        ">
                       {{ front.name }}
                     </v-card-title>
                     <v-card-actions class="pl-5 pb-3">
-                      <a :href="front.link" target="_blank" class="portlink"
-                        >Check it Out!</a
-                      >
+                      <a :href="front.link" target="_blank" class="portlink">Check it Out!</a>
                     </v-card-actions>
                   </v-card>
                 </v-col>
@@ -219,44 +157,23 @@
             </v-tab-item>
             <v-tab-item>
               <v-row>
-                <v-col
-                  cols="12"
-                  lg="6"
-                  md="6"
-                  xl="6"
-                  v-for="back in backend"
-                  :key="back.id"
-                >
+                <v-col cols="12" lg="6" md="6" xl="6" v-for="back in backend" :key="back.id">
                   <v-card class="el ma-5 portfolios">
                     <v-img height="300" :src="back.image">
                       <template #placeholder>
-                        <v-row
-                          class="fill-height"
-                          justify="center"
-                          align="center"
-                        >
-                          <v-progress-circular
-                            width="2"
-                            size="100"
-                            color="purple"
-                            indeterminate
-                          ></v-progress-circular>
+                        <v-row class="fill-height" justify="center" align="center">
+                          <v-progress-circular width="2" size="100" color="purple" indeterminate></v-progress-circular>
                         </v-row>
                       </template>
                     </v-img>
-                    <v-card-title
-                      class="pb-1 text-h6"
-                      style="
-                        font-family: 'Noto Sans' !important;
-                        font-weight: bold;
-                      "
-                    >
+                    <v-card-title class="pb-1 text-h6" style="
+                          font-family: 'Noto Sans' !important;
+                          font-weight: bold;
+                        ">
                       {{ back.name }}
                     </v-card-title>
                     <v-card-actions class="pl-5 pb-3">
-                      <a :href="back.link" target="_blank" class="portlink"
-                        >Check it Out!</a
-                      >
+                      <a :href="back.link" target="_blank" class="portlink">Check it Out!</a>
                     </v-card-actions>
                   </v-card>
                 </v-col>
@@ -264,92 +181,48 @@
             </v-tab-item>
             <v-tab-item>
               <v-row>
-                <v-col
-                  cols="12"
-                  lg="6"
-                  md="6"
-                  xl="6"
-                  v-for="word in wordpress"
-                  :key="word.id"
-                >
+                <v-col cols="12" lg="6" md="6" xl="6" v-for="word in wordpress" :key="word.id">
                   <v-card class="el ma-5 portfolios">
                     <v-img height="300" :src="word.image">
                       <template #placeholder>
-                        <v-row
-                          class="fill-height"
-                          justify="center"
-                          align="center"
-                        >
-                          <v-progress-circular
-                            width="2"
-                            size="100"
-                            color="purple"
-                            indeterminate
-                          ></v-progress-circular>
+                        <v-row class="fill-height" justify="center" align="center">
+                          <v-progress-circular width="2" size="100" color="purple" indeterminate></v-progress-circular>
                         </v-row>
                       </template>
                     </v-img>
-                    <v-card-title
-                      class="pb-1 text-h6"
-                      style="
-                        font-family: 'Noto Sans' !important;
-                        font-weight: bold;
-                      "
-                    >
+                    <v-card-title class="pb-1 text-h6" style="
+                          font-family: 'Noto Sans' !important;
+                          font-weight: bold;
+                        ">
                       {{ word.name }}
                     </v-card-title>
                     <v-card-actions class="pl-5 pb-3">
-                      <a :href="word.link" target="_blank" class="portlink"
-                        >Check it Out!</a
-                      >
+                      <a :href="word.link" target="_blank" class="portlink">Check it Out!</a>
                     </v-card-actions>
-                  </v-card></v-col
-                >
+                  </v-card></v-col>
               </v-row>
             </v-tab-item>
             <v-tab-item>
               <v-row>
-                <v-col
-                  cols="12"
-                  lg="4"
-                  md="6"
-                  xl="4"
-                  v-for="course in courses"
-                  :key="course.id"
-                >
+                <v-col cols="12" lg="4" md="6" xl="4" v-for="course in courses" :key="course.id">
                   <v-card class="el ma-5 portfolios">
                     <v-img height="300" :src="course.image">
                       <template #placeholder>
-                        <v-row
-                          class="fill-height"
-                          justify="center"
-                          align="center"
-                        >
-                          <v-progress-circular
-                            width="2"
-                            size="100"
-                            color="purple"
-                            indeterminate
-                          ></v-progress-circular>
+                        <v-row class="fill-height" justify="center" align="center">
+                          <v-progress-circular width="2" size="100" color="purple" indeterminate></v-progress-circular>
                         </v-row>
                       </template>
                     </v-img>
-                    <v-card-title
-                      class="pb-1 text-h6"
-                      style="
-                        font-family: 'Noto Sans' !important;
-                        font-weight: bold;
-                      "
-                    >
+                    <v-card-title class="pb-1 text-h6" style="
+                          font-family: 'Noto Sans' !important;
+                          font-weight: bold;
+                        ">
                       {{ course.name }}
                     </v-card-title>
                     <v-card-actions class="pl-5 pb-3">
-                      <a :href="course.link" target="_blank" class="portlink"
-                        >Check it Out!</a
-                      >
+                      <a :href="course.link" target="_blank" class="portlink">Check it Out!</a>
                     </v-card-actions>
-                  </v-card></v-col
-                >
+                  </v-card></v-col>
               </v-row>
             </v-tab-item>
           </v-tabs-items>
@@ -362,15 +235,7 @@
           </h3>
           <div class="d-flex justify-center">
             <NuxtLink to="/contact" style="text-decoration: none">
-              <v-btn
-                color="pink"
-                depressed
-                rounded
-                dark
-                x-large
-                class="seeHow mt-10"
-                >Let's Connect</v-btn
-              >
+              <v-btn color="pink" depressed rounded dark x-large class="seeHow mt-10">Let's Connect</v-btn>
             </NuxtLink>
           </div>
         </v-col>
