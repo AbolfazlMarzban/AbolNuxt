@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <v-card>
+    <div style="height: 100%;">
+        <v-card style="height: 100%;">
             <v-list>
                 <v-list-item-group>
-                    <v-list-item v-for="(item, i) in menu" :key="i">
+                    <v-list-item v-for="(item, i) in menu" :key="i" class="admin-menu">
                         <a :href="`/admin/${item}`">{{ item }}</a>
                     </v-list-item>
                 </v-list-item-group>
@@ -24,4 +24,6 @@ export default {
 }
 </script>
 
-<style></style>
+<!-- <style lang="scss">
+
+</style> -->
