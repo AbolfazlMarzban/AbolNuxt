@@ -17,11 +17,7 @@ export default {
     data() {
         return {
             menu: [
-                {
-                    title: '',
-                    icon: '',
-                    link: ''
-                }
+                'portfolio', 'courses', 'services', 'staticPages', 'aboutYou',
             ]
         }
     }
