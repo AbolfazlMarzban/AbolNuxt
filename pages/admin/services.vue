@@ -1,13 +1,15 @@
 <template>
   <div>
-    <!-- <LazyAdminHome /> -->
+    <h1>Services</h1>
   </div>
 </template>
 
 <script>
 export default {
-  layout: "admin"
+    layout: "admin"
 }
 </script>
 
-<style></style>
+<style>
+
+</style>
