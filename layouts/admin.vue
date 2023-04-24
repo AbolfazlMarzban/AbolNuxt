@@ -4,7 +4,7 @@
             <v-col cols="2">
                 <AdminMenu />
             </v-col>
-            <v-col cols="10">
+            <v-col cols="10" class="pt-5">
                 <Nuxt />
             </v-col>
         </v-row>

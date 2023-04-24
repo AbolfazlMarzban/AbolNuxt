@@ -1,13 +1,39 @@
 <template>
   <div>
-    <h1>Portfolio</h1>
-    <!-- <LazyAdminHome /> -->
+    <AdminHeader/>
+    <v-data-table
+      :headers="headers"
+    ></v-data-table>
   </div>
 </template>
 
 <script>
 export default {
-  layout: "admin"
+  layout: "admin",
+  data(){
+    return{
+      headers:[
+        {
+          text: 'image', 
+          value: 'image',
+          sort: false,
+          align: 'center'
+        },
+        {
+          text: 'name', 
+          value: 'name',
+          sort: false,
+          align: 'center'
+        },
+        {
+          text: 'type', 
+          value: 'type',
+          sort: false,
+          align: 'center'
+        }
+      ]
+    }
+}
 }
 </script>
 
