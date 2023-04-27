@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     insert() {
-
+      this.$router.push('/admin/portfolio/insert')
     }
   }
 }
