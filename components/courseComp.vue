@@ -5,8 +5,8 @@
                 <uploader />
             </v-col>
             <v-col cols="6" class="d-flex flex-column">
-                <v-text-field label="project Name" v-model="name"></v-text-field>
-                <v-text-field label="project Type" v-model="type"></v-text-field>
+                <v-text-field label="Course Name" v-model="name"></v-text-field>
+                <v-text-field label="Course link" v-model="link"></v-text-field>
             </v-col>
         </v-row>
     </div>
@@ -20,7 +20,7 @@ export default {
     data() {
         return {
             name: "",
-            type: ""
+            link: ""
         }
     }
 }
