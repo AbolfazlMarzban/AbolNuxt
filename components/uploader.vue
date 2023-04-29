@@ -1,63 +1,57 @@
 <template>
   <div>
-    <div
-              class="d-flex flex-column align-center justify-center flex-grow-1 upload-block"
-          
-            >
-            <!-- @click="chooseImage"
-              :style="`background-image: url('${
-                board.image.downloadURL ? board.image.downloadURL : ''
-              }');height:150px;background-size: cover;background-position: center;`" -->
-    <template
-              >
-              <!-- v-if="!fileToUpload.progress || fileToUpload.progress == 0" -->
+    <div class="d-flex flex-column align-center justify-center flex-grow-1 uploader">
+      <input type="file" @change="handleFileUpload($event)" color="#f66f26" buffer-value="0" />
+      <label v-if="upload.loading == 0">
+        <div v-if="!img.path" class="uploaderText">
+          <v-icon style="font-size: 60px;">mdi-upload</v-icon>
+          <p>Upload project Picture</p>
+        </div>
+        <div v-else>
+          <v-img max-height="150" max-width="150" :src="setImageUrl(img.path)"></v-img>
+        </div>
 
-                <v-icon>mdi-camera</v-icon>
-                <p>upload project Photo</p>
-                <input
-                  type="file"
-                  accept="jpg, jpeg, png"
-                  ref="boardBackground"
-                  multiple
-                  color="#f66f26"
-                  buffer-value="0"
-                  @click="onFileClicked($event)"
-                  @change="onFileSelected($event)"
-                  style="display: none"
-                />
-              </template>
-              <!-- <template
-                v-else-if="
-                  fileToUpload.progress > 0 && fileToUpload.progress < 100
-                "
-              >
-                <div class="text-center">
-                  <v-progress-circular
-                    :size="50"
-                    color="green"
-                    indeterminate
-                  ></v-progress-circular>
-                </div>
-              </template> -->
-  </div>
+      </label>
+      <div class="text-center" v-else>
+        <v-progress-circular :size="50" color="green" indeterminate></v-progress-circular>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-data(){
-    return{
-
+  data() {
+    return {
+      img: {
+        path: null
+      },
+      upload: {
+        loading: 0
+      }
     }
-}
+  }
 }
 </script>
 
 <style>
-.upload-block {
+.uploader {
   border: 2px dashed #adadad;
   padding: 30px;
   border-radius: 15px;
   margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.uploader input {
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.uploaderText {
+  cursor: pointer !important;
+  color: grey;
 }
 </style>
