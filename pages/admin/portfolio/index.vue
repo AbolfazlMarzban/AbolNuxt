@@ -28,6 +28,12 @@ export default {
           value: 'type',
           sort: false,
           align: 'center'
+        },
+        {
+          text: 'link',
+          value: 'link',
+          sort: false,
+          align: 'center'
         }
       ]
     }

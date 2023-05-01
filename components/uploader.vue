@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="d-flex flex-column align-center justify-center flex-grow-1 uploader">
+  <div style="height: 100%;">
+    <div class="d-flex flex-column align-center justify-center flex-grow-1 uploader" style="height: 100%;">
       <input type="file" @change="handleFileUpload($event)" color="#f66f26" buffer-value="0" />
       <label v-if="upload.loading == 0">
         <div v-if="!img.path" class="uploaderText">
@@ -39,7 +39,6 @@ export default {
   border: 2px dashed #adadad;
   padding: 30px;
   border-radius: 15px;
-  margin-bottom: 20px;
   text-align: center;
   width: 100%;
 }
