@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div>
       <label> {{label}} </label>
       <tiptap-vuetify class="mt-3" :value="value" :placeholder="placeholder" :extensions="extensions"
@@ -71,4 +71,4 @@
   .tiptap-vuetify-editor__content p.tiptap-vuetify-editor__paragraph--is-empty:first-child:before {
     float: right;
   }
-  </style> -->
+  </style> --> 
