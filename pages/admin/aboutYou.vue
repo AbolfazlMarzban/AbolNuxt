@@ -1,6 +1,11 @@
 <template>
   <div>
-    <h1>About You</h1>
+    <v-row>
+      <v-col cols="12" class="pa-10">
+        <editor />
+      </v-col>
+    </v-row>
+
   </div>
 </template>
 

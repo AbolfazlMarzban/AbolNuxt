@@ -17,7 +17,7 @@ export default {
     data() {
         return {
             menu: [
-                'portfolio', 'courses', 'services', 'staticPages', 'aboutYou',
+                'portfolio', 'courses', 'services', 'aboutYou',
             ]
         }
     }
