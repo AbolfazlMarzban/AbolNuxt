@@ -1,9 +1,7 @@
 <template>
   <div>
-    <!-- <label> {{label}} </label> -->
-    <tiptap-vuetify class="mt-3" :value="value" :placeholder="placeholder" :extensions="extensions"
-      @input="$emit('input', arguments[0])">
-      {{content}}
+    <tiptap-vuetify class="mt-3" :value="value" :extensions="extensions" @input="$emit('input', arguments[0])">
+      {{ content }}
     </tiptap-vuetify>
   </div>
 </template>
