@@ -1,5 +1,7 @@
 export default {
+  ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'static',
   head: {
     title: 'AbolfazlMarzban',
     htmlAttrs: {
@@ -23,7 +25,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    "~/plugins/TiptapVuetify.js"
+    "~/plugins/tipTapVuetify.js"
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
